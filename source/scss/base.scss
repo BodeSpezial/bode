@@ -16,6 +16,13 @@
     font-family: JetBrainsMono, "Courier New", Courier, monospace;
 }
 
+main {
+    max-width: 600px;
+    margin: auto;
+    padding: 0 1rem;
+    min-height: calc(100% - 7.625rem);
+}
+
 .navbar {
     display: flex;
     flex-direction: row;
@@ -73,6 +80,12 @@ footer {
         .text {
             display: initial;
         }
+    }
+}
+
+@media screen and (min-width: 610px) {
+    main {
+        min-height: calc(100% - 6.3125rem);
     }
 }
 
