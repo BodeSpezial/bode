@@ -1,0 +1,23 @@
+
+<h5>All Posts</h5>
+
+<% page.posts.each(function(post) { %>
+<div class="row">
+
+    <a href="<%- url_for(post.path) %>" class="">
+  <div>
+    <p class="bottom"><%- full_date(post.date, 'DD MM YYYY') %></p>
+  </div>
+  <div>
+      <p>
+      <% if (post.title == "") { %>
+        untitled
+      <% } else { %>
+        <%- post.title %>
+      <% } %>
+      </p>
+  </div>
+    </a>
+</div>
+<% }) %>
+<%- partial('partial/pagination', {type: 'page'}) %>
