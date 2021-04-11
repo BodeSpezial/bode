@@ -14,6 +14,26 @@
           </li>
    <% } %>
       </ul>
+      </div>
+
+      <div class="spacer"></div>
+
+      <div class="socials">
+          <ul>
+            <% for (page in theme.socials) { %>
+                <li>
+                    <a href="<%- url_for(theme.socials[page]) %>">
+                        <span class="text">
+                            <%- page %>
+                        </span>
+                        <span class="icon">
+                            <img src="/icons/<%- page %>.svg" alt="<%- page %> icon">
+                        </span>
+                    </a>
+                </li>
+            <% } %>
+          </ul>
+    </div>
   </div>
 
 </div>
