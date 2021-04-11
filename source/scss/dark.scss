@@ -1,0 +1,20 @@
+@import "./colors";
+
+body {
+    background-color: $dark_black;
+    color: $dark_white;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+
+    &:hover {
+        text-decoration: underline wavy $dark_blue;
+    }
+}
+
+.navbar {
+    background-color: $dark_yellow;
+    color: $dark_black;
+}
