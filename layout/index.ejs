@@ -12,18 +12,20 @@
 <% site.posts.sort('date', 'desc').limit(theme.max_post).forEach(function(post){ %>
 <div class="row">
 
-  <div class="three columns left lit">
-    <p class="bottom"><%- full_date(post.date, 'll') %></p>
-  </div>
-  <div class="nine columns left mb-3">
     <a href="<%- url_for(post.path) %>" class="">
+  <div>
+    <p class="bottom"><%- full_date(post.date, 'DD MM YYYY') %></p>
+  </div>
+  <div>
+      <p>
       <% if (post.title == "") { %>
         no title
       <% } else { %>
         <%- post.title %>
       <% } %>
-    </a>
+      </p>
   </div>
+    </a>
 </div>
 <% }) %>
 
