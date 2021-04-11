@@ -82,13 +82,11 @@
 </head>
 
 <body class="<%- theme.mode %>">
-        <%- partial('partial/header') %>
-  <div class="content">
-
+  <%- partial('partial/header') %>
+  <main>
           <%- body %>
-
-    </div>
-
+  </main>
+  <%- partial('partial/footer') %>
   </div>
 
 </body>
