@@ -1,2 +1,18 @@
 @import "./dark";
 
+@font-face {
+    font-family: "JetBrainsMono";
+    src: url("/fonts/JetBrainsMono.woff2");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "JetBrainsMono";
+    src: url("/fonts/JetBrainsMonoBold.woff2");
+    font-weight: bold;
+}
+
+* {
+    font-family: JetBrainsMono, "Courier New", Courier, monospace;
+}
+
