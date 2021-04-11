@@ -1,1 +1,18 @@
 <div>
+
+  <div class="navbar">
+      <ul>
+    <a href="<%= config.root %><%= page.lang %>">
+      <%= theme.title %>
+    </a>
+          <li>
+          </li>
+   <% for (name in theme.nav) { %>
+          <li>
+     <a href="<%- url_for(theme.nav[name]) %>"><%- name %></a>
+          </li>
+   <% } %>
+      </ul>
+  </div>
+
+</div>
